@@ -52,3 +52,6 @@ augroup project
     autocmd BufRead,BufNewFile *.h,*.c set filetype=c.doxygen
 augroup END
 set number
+set t_Co=256
+set background=dark
+colorscheme PaperColor
