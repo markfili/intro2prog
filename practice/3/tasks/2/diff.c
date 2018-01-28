@@ -10,26 +10,25 @@
  */
 
 void print_result(int prod, int sum) {
-	printf("----------\nProd: %d\nSum: %d\nDiff: %d\n", prod, sum, prod-sum);
+    printf("----------\nProd: %d\nSum: %d\nDiff: %d\n", prod, sum, prod-sum);
 }
 
 int main() {
-	int num;
-	int prod_even = 1, sum_odd;
-	while(1) {
+    int num, prod_even = 1, sum_odd;
 
-		printf("Num: ");
-		scanf(" %d", &num);
-		if (num == 0) {
-			print_result(prod_even, sum_odd);
-			break;
-		}
-		if (num % 2 == 0) {
-		    prod_even = MUL(prod_even, num);
-		} else {
-			sum_odd = ADD(sum_odd, num);	
-		}
-	}
+    while(1) {
+        printf("Num: ");
+        scanf(" %d", &num);
+        if (num == 0) {
+            print_result(prod_even, sum_odd);
+            break;
+        }
+        if (num % 2 == 0) {
+            prod_even = MUL(prod_even, num);
+        } else {
+            sum_odd = ADD(sum_odd, num);    
+        }
+    }
 
-	return 0;
+    return 0;
 }
