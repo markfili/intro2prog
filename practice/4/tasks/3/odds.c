@@ -18,6 +18,7 @@ int main() {
     if (test_power()) {
         test_kick();
     }
+    return 0;
 }
 
 unsigned kick_the_odds(unsigned number) {
