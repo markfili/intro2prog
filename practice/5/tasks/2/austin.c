@@ -13,9 +13,9 @@ int main() {
     double x = 2.000000;
     double x4, x8, x15;
 
-    printf("values %f %f %f %f\n", x, x4, x8, x15); // values 2.000000 0.000000 0.000000 0.000000
+    printf("values %lf %lf %lf %lf\n", x, x4, x8, x15); // values 2.000000 0.000000 0.000000 0.000000
     powers(x, &x4, &x8, &x15);
-    printf("values %f %f %f %f\n", x, x4, x8, x15); // values 2.000000 32.000000 512.000000 65536.000000
+    printf("values %lf %lf %lf %lf\n", x, x4, x8, x15); // values 2.000000 32.000000 512.000000 65536.000000
     return 0;
 }
 

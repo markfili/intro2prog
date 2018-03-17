@@ -42,13 +42,13 @@ int main()
 }
 
 int swap(int *a, int *b, int *c) {
-    if (!a || !b || !c) {
+    int temp;
+    if (!(a && b && c)) {
         return -1;
     }
     if (a == b || a == c || b == c) {
         return -2;
     }
-    int temp;
     temp = *a;
     *a = *b;
     *b = *c;
